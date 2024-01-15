@@ -11,36 +11,50 @@
 <body>
     <div class="wraper_content">
         <div class="container_content">
-            <div class="wraper_header">
+            <div class="wraper_header ">
                 <h2>Checkout here!</h2>
             </div>
-            <div class="wraper_progress-bar">
-                <div class="bar_step"></div>
-                <div class="bar_bar"></div>
-                <div class="bar_step"></div>
-                <div class="bar_bar"></div>
-                <div class="bar_step"></div>
-                <div class="bar_bar"></div>
-                <div class="bar_step"></div>
-                <div class="bar_bar"></div>
-                <div class="bar_step"></div>
+            <div class="wraper_progress-indicator">
+                <div class="wraper_progress-bar">
+                    <div class="bar_step bar_step-active step_first"></div>
+                    <div class="bar_bar bar_step-active"></div>
+                    <div class="bar_step bar_step-active step_second"></div>
+                    <div class="bar_bar bar_step-active"></div>
+                    <div class="bar_step bar_step-active step_third"></div>
+                    <div class="bar_bar"></div>
+                    <div class="bar_step step_last"></div>
+                </div>
+                <div class="wraper_step-name">
+                    <p>Cart</p>
+                    <p>Confirmation</p>
+                    <p>Payment</p>
+                    <p>Finish</p>
+                </div>
             </div>
-            <div class="wraper_select-method">
-                <div class="option_container">
-                    <div class="wraper_image">
-                        <img src="images/1.png" alt="VISA">
-                        <img src="images/2.png" alt="MasterCard">
+            <div class="wraper_payment-options">
+                <label for="visa_option" class="option_container">
+                    <div class="wraper_option-content">
+                        <div class="wraper_image">
+                            <img src="images/1.png" alt="VISA">
+                            <img src="images/2.png" alt="MasterCard">
+                        </div>
+                        <div class="wraper_option-select">
+                            <input name="payment_option" type="radio" id="visa_option">
+                            <p>Pay AU$20.99 with credit card</p>
+                        </div>
                     </div>
-                    <input type="radio">
-                    <p>Pay AU$20.99 with credit card</p>
-                </div>
-                <div class="option_container">
-                    <div class="wraper_image">
-                        <img src="images/3.png" alt="PayPal">
+                </label>
+                <label for="paypal_option" class="option_container">
+                    <div class="wraper_option-content">
+                        <div class="wraper_image">
+                            <img src="images/3.png" alt="PayPal">
+                        </div>
+                        <div class="wraper_option-select">
+                            <input name="payment_option" type="radio" id="paypal_option" >
+                            <p>Pay AU$20.99 with PayPal</p>
+                        </div>
                     </div>
-                    <input type="radio">
-                    <p>Pay AU$20.99 with PayPal</p>
-                </div>
+                </label>
             </div>
             <form action="#">
                 <div class="wraper_input-row">
@@ -72,6 +86,6 @@
             <button id="back">Back</button>
             <button id="next">Next Step</button>
         </div>
-        <div></div>
+    </div>
 </body>
 </html>
