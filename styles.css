@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eeeeee;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin: 0;
+}
+
+.container_content {
+    background-color: #fff;
+    padding: 20px 50px 50px 50px;
+}
+
+.container_content > * {
+    margin: 20px 0;
+}
+
+.wraper_progress-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    --step-dimensions: 20px;
+    height: var(--step-dimensions);
+}
+
+.wraper_step-name {
+    color: #1abc9c;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wraper_step-name p:last-child {
+    color: #000;
+}
+
+.bar_bar {
+    background-color: #efefef;
+    height: calc(var(--step-dimensions)/4);
+    width: 33.33%;
+}
+
+.bar_step {
+    position: absolute;
+    background-color: #efefef;
+    border-radius: 50%;
+    height: var(--step-dimensions);
+    width: var(--step-dimensions);
+    border: 4px solid #fff;
+}
+
+.step_first {
+    top: 0;
+    left: 0;
+}
+
+.step_second {
+    top: 0;
+    left: 33.33%;
+    translate: -50% 0;
+}
+
+.step_third {
+    top: 0;
+    left: 66.66%;
+    translate: -50% 0;
+}
+
+.step_last {
+    top: 0;
+    right: 0;
+}
+
+.bar_step-active {
+    background-color: #1abc9c;
+}
+
+.wraper_payment-options {
+    display: flex;
+    gap: 15px;
+}
+
+.option_container {
+    background-color: #efefef;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.wraper_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.wraper_option-select {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.wraper_option-select input {
+    margin: 0;
+}
+
