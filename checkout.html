@@ -57,27 +57,29 @@
                 </label>
             </div>
             <form action="#">
-                <div class="wraper_input-row">
+                <div class="wraper_input--group">
                     <div class="wraper_input">
-                        <label for="input_name"></label>
-                        <input type="text" id="input_name">
+                        <label for="input_name">Name</label>
+                        <div class="container_input"><input type="text" id="input_name"></div>
                     </div>
                     <div class="wraper_input">
-                        <label for="input_card-number"></label>
-                        <input type="text" id="input_card-number">
+                        <label for="input_card-number">Card Number</label>
+                        <div class="container_input"><input type="text" id="input_card-number"></div>
                     </div>
                 </div>
-                <div class="wraper_input-row">
-                    <div class="wraper_input">
-                        <label for="input_valid-date"></label>
-                        <input type="text" id="input_valid-date">
+                <div class="wraper_input--group">
+                    <div class="wraper_input-endnote--group">
+                        <div class="wraper_input">
+                            <label for="input_valid-date">Valid date</label>
+                            <div class="container_input"><input type="text" id="input_valid-date"></div>
+                        </div>
+                        <div class="wraper_input">
+                            <label for="input_cvc">CVV/CVC *</label>
+                            <div class="container_input"><input type="text" id="input_cvc"></div>
+                        </div>
                     </div>
-                    <div class="wraper_input">
-                        <label for="input_cvc"></label>
-                        <input type="text" id="input_cvc">
-                    </div>
-                    <div class="wraper_endnote"> <q>* CVV or CVC is the card security code, unique three digits nuber on
-                            the back of your card separate from its number</q>
+                    <div class="wraper_endnote"> <p>* CVV or CVC is the card security code, unique three digits nuber on
+                            the back of your card separate from its number</p>
                     </div>
                 </div>
             </form>
