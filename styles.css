@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --padding-side: 70px;
+    --font-size-global: 12px;
+}
+
 body {
     background-color: #eeeeee;
     width: 100%;
@@ -9,15 +14,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: sans-serif;
 }
 
 h2 {
     margin: 0;
 }
 
+.wraper_content {
+    width: 80%;
+}
+
 .container_content {
     background-color: #fff;
-    padding: 20px 50px 50px 50px;
+    padding: 20px var(--padding-side) 50px var(--padding-side);
 }
 
 .container_content > * {
@@ -94,6 +104,7 @@ h2 {
     width: 50%;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: 30px;
 }
 
@@ -114,3 +125,95 @@ h2 {
     margin: 0;
 }
 
+label {
+    display: block;
+}
+
+.wraper_input--group {
+    display: flex;
+    gap: 15px;
+}
+
+.wraper_input,
+.wraper_endnote {
+    width: 50%;
+
+}
+
+.wraper_input input {
+    width: 100%;
+    border: none;
+}
+
+/* .wraper_input input {
+    width: 100%;
+    border: none;
+} */
+
+.wraper_input-endnote--group {
+    width: 50%;
+    display: flex;
+    gap: 15px;
+}
+
+.wraper_controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px var(--padding-side) 0 var(--padding-side);
+}
+
+button {
+    width: 120px;
+    padding: 10px 0;
+    border-radius: 30px;
+    text-align: center;
+    border: none;
+}
+
+#back {
+    background-color: #fff;
+    color: #1abc9c;
+}
+
+#next {
+    background-color: #1abc9c;
+    color: #fff;
+}
+
+.container_input {
+    border: 1px solid #e3e3e3;
+    height: 2.5em;
+    border-radius: 5px;
+}
+
+.wraper_endnote {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+
+.wraper_endnote p,
+form label {
+    color: #969696;
+}
+
+.wraper_input label {
+    font-size: var(--font-size-global);
+    margin-bottom: 10px;
+}
+
+form:last-child .wraper_input--group {
+    margin-top: 15px;
+}
+
+.wraper_step-name p{
+    font-size: var(--font-size-global);
+}
+
+h2 {
+    font-size: calc(1.5*var(--font-size-global));
+}
+
+.wraper_option-select p {
+    font-size: var(--font-size-global) 
+}
